@@ -1,0 +1,19 @@
+yad --form \
+--field="caps":fbtn "xterm -geom 30x20-0-0 -e bash -c "sudo -u batan bash /home/batan/check/caps.sh" \
+--field="custom-grub":fbtn "xterm -geom 30x20-0-0 -e bash -c "sudo -u batan bash /home/batan/check/custom-grub.sh" \
+--field="firewall":fbtn "xterm -geom 30x20-0-0 -e bash -c "sudo -u batan bash /home/batan/check/firewall.sh" \
+--field="fonts":fbtn "xterm -geom 30x20-0-0 -e bash -c "sudo -u batan bash /home/batan/check/fonts.sh" \
+--field="fstab":fbtn "xterm -geom 30x20-0-0 -e bash -c "sudo -u batan bash /home/batan/check/fstab.sh" \
+--field="gpg":fbtn "xterm -geom 30x20-0-0 -e bash -c "sudo -u batan bash /home/batan/check/gpg.sh" \
+--field="keybinding":fbtn "xterm -geom 30x20-0-0 -e bash -c "sudo -u batan bash /home/batan/check/keybinding.sh" \
+--field="lamp.t":fbtn "xterm -geom 30x20-0-0 -e bash -c "sudo -u batan bash /home/batan/check/lamp.t.sh" \
+--field="mega":fbtn "xterm -geom 30x20-0-0 -e bash -c "sudo -u batan bash /home/batan/check/mega.sh" \
+--field="powermanager":fbtn "xterm -geom 30x20-0-0 -e bash -c "sudo -u batan bash /home/batan/check/powermanager.sh" \
+--field="snapwindow":fbtn "xterm -geom 30x20-0-0 -e bash -c "sudo -u batan bash /home/batan/check/snapwindow.sh" \
+--field="ssh":fbtn "xterm -geom 30x20-0-0 -e bash -c "sudo -u batan bash /home/batan/check/ssh.sh" \
+--field="superkey":fbtn "xterm -geom 30x20-0-0 -e bash -c "sudo -u batan bash /home/batan/check/superkey.sh" \
+--field="themes":fbtn "xterm -geom 30x20-0-0 -e bash -c "sudo -u batan bash /home/batan/check/themes.sh" \
+--field="timezone":fbtn "xterm -geom 30x20-0-0 -e bash -c "sudo -u batan bash /home/batan/check/timezone.sh" \
+--field="visudo":fbtn "xterm -geom 30x20-0-0 -e bash -c "sudo -u batan bash /home/batan/check/visudo.sh" \
+--field="y":fbtn "xterm -geom 30x20-0-0 -e bash -c "sudo -u batan bash /home/batan/check/yad3" \
+--field="ysettings":fbtn "xterm -geom 30x20-0-0 -e bash -c "sudo -u batan bash /home/batan/check/ysettings.sh" \
