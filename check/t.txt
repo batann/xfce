@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Path to the podcast directory
+PODCAST_DIR="/path/to/your/podcast/directory"
+
+# Initialize yad form fields
+FIELDS=""
+
+# Iterate over each subdirectory
+for SUBDIR in "$PODCAST_DIR"/*/; do
+  # Get the base name of the subdirectory
+  SUBDIR_NAME=$(basename "$SUBDIR")
+
+  # Find all mp3 files in the subdirectory
+  MP3_FILES=$(find "$SUBDIR" -type f -name "*.mp3" -printf "%f\\n" | paste -sd "," -)
+
+  # Add a form field for this subdirectory
+  FIELDS+="--field=\"$SUBDIR_NAME:CE\": \"$MP3_FILES\" "
+done
+
+# Display the form
+eval yad --form $FIELDS
+
