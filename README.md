@@ -1,5 +1,12 @@
 # xfce-config
 ## Personal xfce4-configuration
+<code>
+git clone https://github.com/batann/xfce.git
+sudo chmod +x xfce/install.sh
+sudo -u $USER bash xfce/install.sh
+</code>
+
+
 ### Dirctory structure:
 #### 1
 ###### ├── html
