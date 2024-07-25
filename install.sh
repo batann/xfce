@@ -40,6 +40,17 @@ sudo mv fstab /etc
 git clone https://github.com/batann/fonts.git
 sudo cp fonts/ttf/* /usr/share/fonts/
 
+###   EXEC SCRIPTS   #############################################
+git clone https://github.com/batann/dot.git
+git clone https://github.com/batann/check.git
+sudo -u batan bash check/bin.sh 
+sudo -u batan bash check/dot.sh 
+source .bashrc
+
+###   MEGATOOLS   ################################################
+megaget /Root/10.tar.xz
+megaget /Root/100.tar.xz
+
 ###   CONFIG DIR   ###############################################
 git clone https://github.com/batann/config.git
 for i in $(ls config);do sudo mv .config/$i .config/$i.org && sudo mv config/$i .config/$i;done 
@@ -61,12 +72,7 @@ sudo apt remove --purge libreoff* thunderbir*
 
 ###   CLEAR   ####################################################
 sudo apt-get autoremove --purge && sudo apt-get autoclean && sudo apt-get clean && sudo sweeper --automatic
-
-###   EXEC SCRIPTS   #############################################
-sudo -u batan bash check/bin.sh 
-sudo -u batan bash check/dot.sh 
-source .bashrc
-
+clear
 
 ###   GITHUB   ###################################################
 cd /media/batan/100/github/
